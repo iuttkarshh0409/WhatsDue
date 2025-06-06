@@ -17,7 +17,7 @@ def get_connection():
             use_pure=True
         )
         if connection.is_connected():
-            print("✅ Connected to the MySQL database successfully!")
+            print("Connected to the MySQL database successfully!")
         return connection
     except mysql.connector.Error as err:
         print(f"❌ Error: {err}")
